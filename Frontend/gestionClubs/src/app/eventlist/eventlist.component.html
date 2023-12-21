@@ -1,0 +1,91 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Event List</title>
+</head>
+<body>
+  <div >
+    <div >
+      <h4 >Event List</h4>
+      <ul >
+        <li
+          *ngFor="let even of events; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveEvent(even, i)"
+        >
+          {{ even.eventName }}
+        </li>
+      </ul>
+    </div>
+    <div >
+      <div *ngIf="currentEvent" class="divdec">
+        <h4>Event</h4>
+        <div >
+          <label><strong>Id:</strong></label> {{ currentEvent.id }}
+        </div>
+        <div >
+          <label><strong>Name:</strong></label> {{ currentEvent.eventName }}
+        </div>
+        <div>
+          <label><strong>Organizer:</strong></label>
+          {{ currentEvent.organizer }}
+        </div>
+        <div>
+          <label><strong>Place:</strong></label>
+          {{ currentEvent.place }}
+        </div>
+        <div>
+          <label><strong>Date:</strong></label>
+          {{ currentEvent.eventDate }}
+        </div>
+        <div>
+          <label for="textInput">Give a UserName:</label>
+          <input type="text" id="textInput" name="textInput" [(ngModel)]="username" />
+        </div>
+        <div>
+          <input type="submit" class="btn2" (click)="joinEvent(currentEvent.eventName)" value="Join Event">
+        </div>
+      </div>
+  
+      <div *ngIf="!currentEvent">
+        <br />
+        <p style="font-size: 20px;color:blue">Please click on a Event...</p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- 
+  <div >
+    <h4>Event List</h4>
+    <table >
+      <thead>
+        <tr>
+          <th *ngFor="let even of events; let i = index"
+          [class.active]="i == currentIndex"
+          (click)="setActiveEvent(even, i)"
+        >
+          {{ even.eventName }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees | async">
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.emailId}}</td>
+          <td><button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+              <button (click)="updateEmployee(employee.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+              <button (click)="employeeDetails(employee.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+
+  <!--  -->
+</body>
+</html>
+
+

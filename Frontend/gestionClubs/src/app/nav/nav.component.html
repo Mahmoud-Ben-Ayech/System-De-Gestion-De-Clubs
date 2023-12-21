@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbarContainer">
+        <div class="img">
+            <img src="assets\photo\logo1.png" width="200" height="100">
+        </div>
+        <div id="navbar1">
+            <a routerLink="apropos.html" routerLinkActive="active">Accueil</a>
+        </div>
+         <div class="nav">
+            <div id="navbar2">
+                <a href="#apropos">Àpropos </a>
+                <a href="#clubs">Clubs </a>
+                <a href="#even">Evenements </a>
+                <a href="#temoin">Avis </a>
+                <a href="#contact">Contact </a>    
+            </div>
+        </div>
+        <div class="searchContainer">
+            <input id="rech" type="search" placeholder="Rechercher">
+            <img class="searchicon" src="assets\photo\search.svg">
+        </div>
+        <div  class="userContainer">
+            <button (click)="gotoItems()">Se connecter</button>
+            <img class="usericon" src="assets\photo\user.svg">
+        </div>
+    </div>
+</body>
+</html>

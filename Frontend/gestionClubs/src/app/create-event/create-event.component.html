@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create Event</title>
+</head>
+<body>
+	<div class="container" >
+        <div class="login-box" style="left:1200px;top:850px">
+            <h3 style="color:red;text-align: center;">Edit Event</h3>
+            <form >
+                <div class="user-box">
+                    <input type="number" id="id" name="id" [(ngModel)]="id" required>
+                    <label for="id">id</label>
+                </div> 
+                <div class="user-box">
+                     <input type="text" id="eventName" name="eventName" [(ngModel)]="eventName" required>
+                     <label for="eventName">Evenement Name:</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="organizer" name="organizer" [(ngModel)]="organizer" required>
+                    <label for="Organizer">Organizer:</label>
+                </div>
+                <div class="user-box">  
+                    <input type="text" id="place" name="place" [(ngModel)]="place" required>
+                    <label for="Place">Place:</label>
+                </div>
+                <div class="user-box">
+                    <input type="number" id="attendees" name="attendees" [(ngModel)]="attendees" required>
+                    <label for="Attendees">Attendees:</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" id="materialsNeeded" name="materialsNeeded" [(ngModel)]="materialsNeeded" required>
+                    <label for="materialsNeeded">Materials Needed:</label>
+                </div>
+                <div class="user-box"> 
+                    <input type="text" id="eventDate" name="eventDate" [(ngModel)]="eventDate" required>
+                    <label for="eventDate">Event's Date:</label>
+                </div>
+                <div>
+                    <input class="btn1" type="submit" (click)="saveEvent()" value="Edit">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="liste">
+        <app-eventlist></app-eventlist>
+    </div>
+    
+</body>
+</html>

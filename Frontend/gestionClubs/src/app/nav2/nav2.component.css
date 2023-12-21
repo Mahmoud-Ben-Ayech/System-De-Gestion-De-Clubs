@@ -1,0 +1,95 @@
+.navbarContainer
+{
+    display: flex;
+    align-items: center;
+    height:  95px;
+    padding: 1px 0px;
+}
+.img
+{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.nav
+{
+    padding-left: 50px;
+    /* word-spacing: 22px; */
+}
+#navbar1
+{
+    padding-left: 120px;
+    font-size: 20px;
+    color: #0A336A;
+    font-family: 'KG Corner of the Sky';
+    font-weight: 400; 
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+a
+{
+    text-decoration: none;
+    
+    font-size: 20px;
+    word-spacing: 10px;
+}
+#navbar2
+{
+    font-family: 'Poppins';
+    font-size: 15;
+    font-weight: 600;
+    color: #6C6C6C;
+}
+#rech
+{
+    width: 230px;
+    height: 40px;
+    border-radius: 10px ;
+    border-color: #3362A2;
+}
+::placeholder
+{
+    font-family: 'Poppins';
+    padding-left: 20px;
+    font-size: 14;
+    font-weight: 400;
+}
+.searchContainer
+{
+    position: relative;
+    margin-left: 150px;
+}
+.searchicon
+{
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+.userContainer
+{
+    position: relative;
+    margin-left: 20px;
+   
+}
+.usericon
+{
+    position: absolute;
+    left: 5px;
+    top: 30%;
+}
+button
+{
+    /* position: absolute; */
+    width: 157px;
+    height: 42px;
+    background-color: #3362A2;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    /* right: 46px;
+    top: 36px; */
+    color: white;
+    font-size: 14;
+    font-family: 'Poppins';
+    font-weight: 500;
+}

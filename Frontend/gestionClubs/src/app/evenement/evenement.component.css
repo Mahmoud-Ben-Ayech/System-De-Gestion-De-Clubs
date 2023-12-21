@@ -1,0 +1,128 @@
+.home
+{
+    width: 100%;
+    position: relative;
+}
+.backg
+{
+    height: 706px;
+    width: 100%;
+    padding-top: 150px;
+}
+.cercle
+{
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    top: 250px;
+    left: 150px;
+}
+.mot
+{
+    position: absolute;
+    font-family: 'Happy School';
+    font-size: 50px;
+    top: 210px;
+    left: 200px;
+    color: white;
+}
+.text
+{
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 32px;
+    top: 300px;
+    left: 200px;
+    color: white;
+    text-align: center;
+    width: 300px;
+    line-height: 1.5;
+}
+#rec1
+{
+    position: absolute;
+    background-color: white;
+    width: 353px;
+    height: 271px;
+    border-radius: 10px;
+    top: 210px;
+    left: 600px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#image
+{
+    width: 350px;
+    height: 450px;
+}
+.vert
+{
+    display: flex;
+    padding: 10px;
+    flex-direction:row;
+}
+#rec2
+{
+    position: absolute;
+    background-color: white;
+    width: 353px;
+    height: 271px;
+    border-radius: 10px;
+    top: 210px;
+    right: 112px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#rec3
+{
+    position: absolute;
+    background-color: white;
+    width: 353px;
+    height: 271px;
+    border-radius: 10px;
+    top: 550px;
+    left: 160px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#rec4
+{
+    position: absolute;
+    background-color: white;
+    width: 353px;
+    height: 271px;
+    border-radius: 10px;
+    top: 550px;
+    left: 600px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+#rec5
+{
+    position: absolute;
+    background-color: white;
+    width: 353px;
+    height: 271px;
+    border-radius: 10px;
+    top: 550px;
+    right: 112px;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+}
+.titre
+{
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 20;
+}
+p
+{
+    font-family: 'Poppins';
+    font-size: 16;
+    font-weight: 400;
+}

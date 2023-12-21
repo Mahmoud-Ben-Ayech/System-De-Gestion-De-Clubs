@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Interface</title>
+</head>
+<body>
+	<div class="container">
+        <div class="login-box" style="left:500px;">
+            <h3 style="color:red;text-align: center;">Choisir le type du connexion</h3>
+            <form >
+                
+                <div class="user-box">
+                    <input type="email" name="email" id="email" required="" [(ngModel)]= "modell.email">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password" id="password"  [(ngModel)]= "modell.password" required="" >
+                    <label>Mot de passe</label>
+                </div>
+                <div>
+                    <h2> USER</h2>
+                    <a href="#">
+                        <input class="btn1" (click)="loginUser()" type="submit" value="Sign in">
+                    </a>
+                    
+                </div>
+                <div >
+                    <h2> Responsable Club</h2>
+                    <a href="#">
+                        <input class="btn1" type="submit" (click)="loginResponClub()" value="Sign in">
+                    </a>
+                    
+                </div>
+            </form>
+        </div>
+
+        <div class="login-box" style="left:1000px">
+            <h3 style="color:red;text-align: center;" >CONNEXION ADMIN  </h3>
+            <form >
+                <div class="user-box">
+                    <input type="email" name="email" [(ngModel)]= "model.email"  required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password"  [(ngModel)]= "model.password" required="" >
+                    <label>Mot de passe</label>
+                </div>
+                <div>
+                    <a href="#">
+                        <input  class="btn1" type="submit" (click)="loginAdmin()" style="width:auto;text-align: center;position:absolute;"value="Connexion">
+                    </a>
+                </div>
+            </form>
+        </div>
+          
+       
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,40 @@
+.home
+{
+    position: relative;
+}
+.titre
+{
+    font-family: 'Happy School';
+    padding-top: 100px;
+    /* left: 570px; */
+    font-size: 32px;
+    text-align: center;
+
+}
+.rec
+{
+    position: absolute;
+    top: 320px;
+}
+.photo
+{
+    position: absolute;
+    top: 100px;
+    left: 720px;
+}
+.para
+{
+    text-align: center;
+    position: absolute;
+    top: 400px;
+    width: 268px;
+    font-family: 'Poppins';
+    font-size: 16;
+}
+.guill
+{
+    top: 370px;
+    position: absolute;
+    color: #0A336A;
+    font-weight: bold;
+}
