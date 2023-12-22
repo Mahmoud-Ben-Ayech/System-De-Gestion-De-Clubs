@@ -9,3 +9,6 @@ For this project I use  ***Angular 14.2.2*** as a ***Frontend Framework*** .
 And ***Spring Boot Framework*** with a version of ***Java 1.8*** .
 
 For Database ***MySql***  is used for this project.
+
+
+***NB :*** More details for the version and setup of react you can found in readme.md of folder Frontend
